@@ -1,355 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Contact</title>
-<link rel="canonical" href="index.html" />
-<link rel="shortcut icon" href="" alt="" />
-  <meta charset="utf-8">
-  <meta name="title" content="">
-  <meta name="DC.title" lang="en" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact | Professional Male Entertainment Charleston</title>
+    <link rel="canonical" href="contact.html" />
+    <link rel="shortcut icon" href="" alt="" />
+    <meta charset="utf-8">
+    <meta name="title" content="Contact Michael After Dark Charleston - Bachelorette Party Entertainment">
+    <meta name="description" content="Contact us to book professional male entertainment for your Charleston bachelorette party. Serving Charleston, Mount Pleasant, Isle of Palms, Sullivan's Island, and Folly Beach.">
+    <meta name="DC.title" lang="en" content="Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
  
- <style type="text/css">
-*{
-    font-family: 'Kumbh Sans', sans-serif;
-}
- html{ scroll-behavior: smooth;
-}
-    .navbar a{font-size: 18px;
-        font-weight: bold;
-        color: black!important;
-    }
-    .btn-md{
-            padding: 15px 30px;
-            border-radius: 0;
-    }
-    .mbr-section-subsection{
-        color: #999999;
-     font-size: 20px;
-    margin-bottom: 21px;
-    }
-    .mbr-section-h1{
-        font-size: 46px;
-    }
-    .text-grey{
-        color: #404040;
-    }
-    .content1{
-        font-size: 20px;
-         color: #606060;
-    }
-    .bg-brown{
-        background: #eae8e4;
-    }
-    .display-4{
-        font-size:45px;
-    }
-    .font-weight-400{
-        font-weight: 400;
-    }
-    body{
-        color: #232323;
-    }
-    .content2{
-        font-size: 17px;
-    }
-    li a{
-        color: #ff5722;
-
-    }
-    ul{
-        list-style: circle;
-    }
-    a{
-        text-decoration: none!important;
-    }
-    .content3{
-        color: #696969;
+    <style type="text/css">
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-bg: #1a1a1a;
+        }
+        
+        * {
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            color: #232323;
+            line-height: 1.7;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+        }
+        
+        .navbar-brand img {
+            max-height: 60px;
+        }
+        
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333 !important;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            background-color: var(--primary-color);
+            color: white !important;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+        
+        .contact-form-wrapper {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+        
+        .form-control, .form-select {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(196, 30, 58, 0.15);
+        }
+        
+        .input-group-text {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+            border-right: none;
+        }
+        
+        .input-group .form-control {
+            border-left: none;
+        }
+        
+        .input-group .form-control:focus {
+            border-left: none;
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+        }
+        
+        .btn-submit {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+        }
+        
+        /* Contact Info Cards */
+        .contact-info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .contact-info-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info-card h4 {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info-card a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Service Areas */
+        .service-areas {
+            background: white;
+            padding: 60px 0;
+        }
+        
+        .service-areas h2 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .area-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 10px 25px;
+            margin: 8px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--light-bg);
+            padding: 60px 0;
+        }
+        
+        .faq-section h2 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .accordion-button {
+            background-color: white;
+            color: var(--secondary-color);
+            font-weight: 600;
             font-size: 17px;
-    }
-    .contentImg:hover{
-     box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
-    transform: rotate(-2deg) scale(1.03);
-
-    }
-    .contentImg{
-        transition: all 0.3s;
-        border-radius: 30px;
-    }
-    iframe{
-        border: none!important;
-    }
-    footer{
-        background: black;
-    color: white;
-    }
-    footer a{
-         color: white!important;
-
-    }   
-    .underlineShow {
-    font-weight: inherit;
-    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 30%;
-    background-position: 0 90%;
-    transition: background-size 0.2s ease-in;
-}
-.allShow:hover,.underlineShow:hover{
-        background-size: 100% 100%!important;
-     
-    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%)!important;
-    background-repeat: no-repeat!important;
- 
-    background-position: 0 90%!important;
-    transition: background-size 0.2s ease-in!important;
-}
-.icon-button i{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.icon-button i:hover{
-    color: #7CE0D3;
-}
-.blackPara{
-        background: rgba(0,0,0,0.6);
-    text-align: center;
-}
-.blackPara *{
-    color: white!important;
-
-
-}
-.bg-image{
-    background-image: linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.48)),url('img/ background.jpg');
-    background-size: auto,cover;
-    background-position: center;
-}
-
-
-.faq_area {
-    position: relative;
-    z-index: 1;
-    background-color: #EAE8E4;
-}
-
-.faq-accordian {
-    position: relative;
-    z-index: 1;
-}
-.faq-accordian .card {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 1.5rem;
-}
-.faq-accordian .card:last-child {
-    margin-bottom: 0;
-}
-.faq-accordian .card .card-header {
-    background-color: #ffffff;
-    padding: 0;
-    border-bottom-color: #ebebeb;
-}
-.faq-accordian .card .card-header h6 {
-    cursor: pointer;
-    padding: 1.75rem 2rem;
-    color: #3f43fd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-.faq-accordian .card .card-header h6 span {
-    font-size: 1.5rem;
-}
-.faq-accordian .card .card-header h6.collapsed {
-    color: #070a57;
-}
-.faq-accordian .card .card-header h6.collapsed span {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
-.faq-accordian .card .card-body {
-    padding: 1.75rem 2rem;
-}
-.faq-accordian .card .card-body p:last-child {
-    margin-bottom: 0;
-}
-.special-content .row-item {
-    padding: 3rem;
-    padding-top: 3.7rem;
-    height: 100%;
-}
-.special-content .row-item.card1 {
-    background:  #eae8e4;
-}
-.special-content .row-item.card2 {
-    background:#eddad8;
-}
- .special-content .row-item.card3 {
-    background: #c1bebe;
-}
- .special-content .row-item.card4 {
-    background: #bcd9df;
-}
-.special-content .card-img {
-    margin-bottom: 1.7rem;
-    text-align: left;
-}
-.special-content .item-wrapper {
-    margin-bottom: 1.5rem;
-}
-.yacss-card-title {
-    margin-bottom: 1rem;
-}
-.yacss-iconfont {
-    background-color: #000000;
-    font-size: 30px;
-    height: 56px;
-    min-width: 56px;
-    padding: 0.7rem;
-    padding-top: 13px;
-    color: #fff;
-    border: 1px solid #000000;
-    border-radius: 50%;
-}
-
-@media only screen and (max-width: 575px) {
-    .support-button p {
-        font-size: 14px;
-    }
-}
-
-.support-button i {
-    color: #3f43fd;
-    font-size: 1.25rem;
-}
-@media only screen and (max-width: 575px) {
-    .support-button i {
-        font-size: 1rem;
-    }
-}
-
-.support-button a {
-    text-transform: capitalize;
-    color: #2ecc71;
-}
-@media only screen and (max-width: 575px) {
-    .support-button a {
-        font-size: 13px;
-    }
-}
-</style>
- 
+            padding: 20px 25px;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        
+        .accordion-body {
+            padding: 20px 25px;
+            background-color: white;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: var(--primary-color);
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+            
+            .contact-form-wrapper {
+                padding: 30px 20px;
+            }
+            
+            .navbar-nav .nav-link {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
     
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
- 
-   <a class="navbar-brand" href="index.html">
-        <img alt="" src="" id="" data-test-source="" data-test-pro-id="" data-test-pro-name="" data-test="" title="Male Dancers" alt=""  width="150px"  >
-      </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Michael After Dark Charleston" title="Male Entertainment Charleston" width="150">
+            </a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-        <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="index.html"  rel="nofollow">Home</a></li>
-        <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="reviews.html"  rel="nofollow">Reviews</a></li>
-        <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="about.html"  rel="nofollow">About</a></li>
-        <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="services.html"  rel="nofollow">Services</a></li>
-        <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="contact.html"  rel="nofollow">Contact</a></li>
-    </ul> 
-  </div>
-</nav>
- 
-
- 
-<!-- Contact 1 - Bootstrap Brain Component -->
-<section class="bg-warning py-3 py-md-5">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <h2 class="mb-4 display-5 text-center">Contact</h2>
-          <p class="text-secondary mb-5 text-center">The best way to contact us is to use our contact form below. Please fill out all of the required fields and we will get back to you as soon as possible.</p>
-          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="bg-white border rounded shadow-sm overflow-hidden">
-  
-            <form action="#!">
-              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                <div class="col-12">
-                  <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                      </svg>
-                    </span>
-                    <input type="email" class="form-control" id="email" name="email" value="" required>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                      </svg>
-                    </span>
-                    <input type="tel" class="form-control" id="phone" name="phone" value="">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                </div>
-                <div class="col-12">
-                  <div class="d-grid">
-                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-  
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="margin-top: 76px;">
+        <div class="container">
+            <h1><i class="fas fa-envelope me-3"></i>Contact Us</h1>
+            <p>Book Your Charleston Bachelorette Party Entertainment Today</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Contact Info Cards -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row mb-5">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>Send us your questions</p>
+                        <a href="mailto:info@michaelafterdark.com">info@michaelafterdark.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Service Area</h4>
+                        <p>Serving Charleston Metro</p>
+                        <a href="#service-areas">View All Areas</a>
+                    </div>
+                </div>
+            </div>
 
-<footer>
-  <p><a href="sitemap.html"  rel="nofollow"  class="  allShow"  >Sitemap</a></p>
-  <p><a href="privacy-policy.html" rel="nofollow"   class="  allShow"  >Privacy Policy</a></p>     
-</footer>
+            
+    </section>
 
+    <!-- Service Areas -->
+    <section class="service-areas" id="service-areas">
+        <div class="container">
+            <h2>Areas We Serve in Charleston</h2>
+            <div class="text-center">
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Downtown Charleston</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Mount Pleasant</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Isle of Palms</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Sullivan's Island</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Folly Beach</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>West Ashley</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>North Charleston</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>James Island</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Johns Island</span>
+                <span class="area-badge"><i class="fas fa-map-marker-alt me-2"></i>Daniel Island</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How much does a show cost?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our professional shows start at $200 for quality entertainment. Pricing may vary based on location, date, and specific requirements. Contact us for an exact quote.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How far in advance should we book?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend booking at least 2-3 weeks in advance, especially during peak bachelorette season (spring and fall). However, we can sometimes accommodate last-minute bookings depending on availability.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What areas do you service?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We service all of Charleston metro area including downtown Charleston, Mount Pleasant, Isle of Palms, Sullivan's Island, Folly Beach, West Ashley, North Charleston, Daniel Island, James Island, and Johns Island.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How long is a typical show?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A standard show lasts approximately 15-20 minutes with choreographed routines. We can customize the length based on your preferences and event schedule.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Do you bring your own music and equipment?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We bring all necessary equipment including our portable speaker system and curated music playlists. You don't need to provide anything.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We require 48 hours notice for cancellations or rescheduling. Cancellations made within 48 hours of the scheduled performance may forfeit the deposit. Contact us to discuss specific circumstances.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Michael After Dark Charleston</h5>
+                    <p>Professional male entertainment for bachelorette parties throughout Charleston, SC</p>
+                </div>
+                <div class="col-md-6 mb-3 text-md-end">
+                    <p>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="reviews.html">Reviews</a>
+                        <a href="contact.html">Contact</a>
+                    </p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </p>
+                    <p>&copy; Charleston. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
