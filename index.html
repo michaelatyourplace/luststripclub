@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn how to deliver the best male striptease performance for bachelorette parties. Professional tips, techniques, and choreography advice for creating unforgettable entertainment experiences.">
-    <meta name="keywords" content="male striptease, bachelorette party entertainment, male exotic dancer, strip tease performance, bachelorette party stripper">
-    <title>How to Deliver the Best Male Striptease for Bachelorette Parties | Professional Guide</title>
-    
+    <title>Myrtle Beach Strip Clubs Directory | Grand Strand Clubs &amp; Male Strippers</title>
+    <meta name="description" content="A directory of every strip club on the Grand Strand, from Myrtle Beach to Atlantic Beach and North Myrtle Beach, with addresses, hours, and the best pick for male strippers at private bachelorette parties.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --primary-color: #c41e3a;
@@ -19,37 +18,61 @@
             --accent-color: #e74c3c;
             --light-bg: #f8f9fa;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
             color: #333;
         }
-        
+
+        .navbar-brand { font-weight: 700; letter-spacing: .5px; }
+        .navbar-brand span { color: var(--accent-color); }
+
         .hero-section {
-            background: linear-gradient(rgba(196, 30, 58, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1504593811423-6dd665756598?w=1600') center/cover;
+            background: linear-gradient(rgba(196, 30, 58, 0.9), rgba(44, 62, 80, 0.92)), url('https://images.unsplash.com/photo-1504593811423-6dd665756598?w=1600') center/cover;
             color: white;
-            padding: 120px 0 80px;
-            margin-bottom: 0;
+            padding: 110px 0 80px;
         }
-        
+
         .hero-section h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 700;
             margin-bottom: 25px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
+
         .hero-section .lead {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
-        
-        .content-section {
-            padding: 80px 0;
+
+        .hero-stat {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 10px;
+            padding: 18px 10px;
         }
-        
+
+        .hero-stat strong { display: block; font-size: 1.8rem; line-height: 1.2; }
+
+        .toc-bar {
+            background: var(--secondary-color);
+            padding: 14px 0;
+        }
+
+        .toc-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 4px 14px;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .toc-bar a:hover { color: var(--accent-color); }
+
+        .content-section { padding: 80px 0; }
+
         .section-title {
             color: var(--primary-color);
             font-weight: 700;
@@ -57,92 +80,98 @@
             padding-bottom: 15px;
             border-bottom: 3px solid var(--accent-color);
         }
-        
-        .tip-card {
+
+        .listing-card {
             background: white;
             border-left: 5px solid var(--primary-color);
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 5px;
+            border-radius: 6px;
+            padding: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            height: 100%;
             transition: transform 0.3s ease;
         }
-        
-        .tip-card:hover {
-            transform: translateX(10px);
-        }
-        
-        .tip-card h4 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .step-box {
-            background: white;
-            border-radius: 10px;
-            padding: 35px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            position: relative;
-        }
-        
-        .step-number {
-            position: absolute;
-            top: -20px;
-            left: 30px;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        
-        .step-box h4 {
+
+        .listing-card:hover { transform: translateY(-6px); }
+
+        .listing-card h3 {
             color: var(--secondary-color);
-            margin-top: 20px;
-            margin-bottom: 15px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 6px;
         }
-        
+
+        .area-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            font-size: .78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+
+        .area-badge.alt { background: var(--secondary-color); }
+
+        .listing-meta {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 14px;
+            font-size: .95rem;
+        }
+
+        .listing-meta li { padding: 3px 0 3px 28px; position: relative; }
+
+        .listing-meta i {
+            position: absolute;
+            left: 0;
+            top: 9px;
+            color: var(--primary-color);
+            width: 18px;
+            text-align: center;
+        }
+
+        .listing-card .btn-outline-danger { font-size: .9rem; }
+
         .highlight-box {
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: white;
-            padding: 40px;
+            padding: 45px;
             border-radius: 10px;
-            margin: 40px 0;
         }
-        
-        .highlight-box h3 {
-            color: white;
-            margin-bottom: 20px;
+
+        .highlight-box h2, .highlight-box h3 { color: white; }
+        .highlight-box a.btn-light { color: var(--primary-color); font-weight: 700; }
+        .highlight-box a:not(.btn) { color: #fff; text-decoration: underline; }
+
+        .icon-feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            height: 100%;
         }
-        
+
+        .icon-feature i {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 18px;
+        }
+
         .checklist-box {
             background-color: var(--light-bg);
             border-left: 5px solid #28a745;
             padding: 30px;
-            margin: 30px 0;
             border-radius: 5px;
         }
-        
-        .checklist-box ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .checklist-box li {
-            padding: 10px 0;
-            padding-left: 35px;
-            position: relative;
-        }
-        
+
+        .checklist-box ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+
+        .checklist-box li { padding: 8px 0 8px 35px; position: relative; }
+
         .checklist-box li:before {
             content: "\f00c";
             font-family: "Font Awesome 6 Free";
@@ -150,536 +179,308 @@
             position: absolute;
             left: 0;
             color: #28a745;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
-        
+
         .warning-box {
             background-color: #fff3cd;
             border-left: 5px solid #ffc107;
             padding: 25px;
-            margin: 30px 0;
             border-radius: 5px;
         }
-        
-        .warning-box h4 {
-            color: #856404;
-            margin-bottom: 15px;
-        }
-        
-        .icon-feature {
-            text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            height: 100%;
-            transition: transform 0.3s ease;
-        }
-        
-        .icon-feature:hover {
-            transform: translateY(-10px);
-        }
-        
-        .icon-feature i {
-            font-size: 3.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .timeline-item {
-            padding-left: 50px;
-            position: relative;
-            margin-bottom: 30px;
-        }
-        
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            left: 10px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            background-color: var(--primary-color);
-            border-radius: 50%;
-        }
-        
-        .timeline-item::after {
-            content: "";
-            position: absolute;
-            left: 19px;
-            top: 25px;
-            width: 2px;
-            height: calc(100% + 5px);
-            background-color: #ddd;
-        }
-        
-        .timeline-item:last-child::after {
-            display: none;
-        }
-        
-        .pro-tip {
-            background-color: #d1ecf1;
-            border-left: 5px solid #0dcaf0;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        
-        .pro-tip strong {
-            color: #0c5460;
-        }
-        
+
+        .warning-box h4 { color: #856404; margin-bottom: 12px; }
+
+        .table-directory th { background: var(--secondary-color); color: #fff; }
+
+        footer a { color: #ddd; text-decoration: none; }
+        footer a:hover { color: #fff; }
+
         @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 2.5rem;
-            }
-            
-            .step-number {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
+            .hero-section h1 { font-size: 2.2rem; }
+            .highlight-box { padding: 30px 22px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Grand Strand <span>Club Guide</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Directory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1>How to Deliver the Best Male Striptease for Bachelorette Parties</h1>
-                    <p class="lead">Master the art of professional male entertainment with expert techniques, choreography tips, and performance strategies that create unforgettable bachelorette party experiences.</p>
+                    <h1>Myrtle Beach Strip Clubs: The Complete Grand Strand Directory</h1>
+                    <p class="lead">Every gentlemen's club and adult nightlife spot from Myrtle Beach up to Atlantic Beach and North Myrtle Beach, plus the go-to option for male strippers at private bachelorette parties.</p>
+                    <div class="row g-3 justify-content-center mt-2">
+                        <div class="col-6 col-md-3"><div class="hero-stat"><strong>5</strong>Active Clubs</div></div>
+                        <div class="col-6 col-md-3"><div class="hero-stat"><strong>3</strong>Beach Towns</div></div>
+                        <div class="col-6 col-md-3"><div class="hero-stat"><strong>4 AM</strong>Latest Close</div></div>
+                        <div class="col-6 col-md-3"><div class="hero-stat"><strong>1</strong>Male Pick</div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Introduction Section -->
+    <!-- Table of Contents -->
+    <div class="toc-bar text-center">
+        <div class="container">
+            <a href="#myrtle-beach">Myrtle Beach Clubs</a>
+            <a href="#north-myrtle-beach">North Myrtle &amp; Atlantic Beach</a>
+            <a href="#male-strippers">Male Strippers</a>
+            <a href="#quick-compare">Quick Compare</a>
+            <a href="#tips">Visitor Tips</a>
+        </div>
+    </div>
+
+    <!-- Introduction -->
     <section class="content-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <p class="lead">Delivering an exceptional male striptease performance for bachelorette parties is both an art and a skill that requires confidence, choreography, stage presence, and professionalism. Whether you're an experienced entertainer or considering entering the profession, understanding what makes a truly memorable performance can elevate your act from ordinary to extraordinary.</p>
-                    
-                    <p>The best male striptease performances aren't just about removing clothing—they're about creating an experience filled with energy, excitement, entertainment, and showmanship that celebrates the bride-to-be while keeping the entire party engaged. Professional performers understand that every bachelorette party is unique, requiring adaptability, reading the room, and delivering exactly the right combination of fun, flirtation, and respectful entertainment.</p>
-                    
-                    <div class="highlight-box mt-5">
-                        <h3><i class="fas fa-star me-2"></i>What Makes a Great Performance</h3>
-                        <p class="mb-0">The most successful male striptease performances combine physical fitness and appearance with strong stage presence, practiced choreography, appropriate music selection, audience engagement skills, and unwavering professionalism. It's not just what you do—it's how you make the audience feel. The best performers create an atmosphere where everyone feels comfortable, entertained, and excited while maintaining clear boundaries and respect throughout the entire show.</p>
+                    <p class="lead">The Grand Strand's adult nightlife scene is smaller than it used to be. The area once had well over a dozen gentlemen's clubs, but today the options come down to a handful of established venues split between two pockets: the Seaboard Street and Mr. Joe White Avenue corridor in Myrtle Beach, and the Highway 17 South strip in Atlantic Beach and North Myrtle Beach.</p>
+                    <p>This directory lists every club currently operating along the Grand Strand with its address, phone number, typical hours, and what sets it apart. If you're planning a bachelorette party and want male entertainment instead of a club night, skip ahead to our <a href="#male-strippers">male strippers</a> section for the area's top private-party pick.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Myrtle Beach Listings -->
+    <section id="myrtle-beach" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Strip Clubs in Myrtle Beach</h2>
+
+            <div class="row g-4 mt-3">
+                <!-- Masters -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card">
+                        <h3>Masters Gentleman's Club</h3>
+                        <span class="area-badge">Myrtle Beach</span>
+                        <ul class="listing-meta">
+                            <li><i class="fas fa-map-marker-alt"></i>1901 Mr. Joe White Ave, Suite M, Myrtle Beach, SC 29577</li>
+                            <li><i class="fas fa-phone"></i>(843) 916-0972</li>
+                            <li><i class="fas fa-clock"></i>Daily, 1 PM – 2 AM</li>
+                        </ul>
+                        <p>The largest and longest-running club in Myrtle Beach, with a big roster of entertainers every night, private VIP areas, valet parking, and a food menu. Contact their concierge ahead of time to ask about free admission and shuttle pickup.</p>
+                        <a href="https://mastersclubmyrtlebeach.com/" class="btn btn-outline-danger" target="_blank" rel="nofollow noopener">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Treasure Club -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card">
+                        <h3>The Treasure Club</h3>
+                        <span class="area-badge">Myrtle Beach</span>
+                        <ul class="listing-meta">
+                            <li><i class="fas fa-map-marker-alt"></i>716 Seaboard St, Myrtle Beach, SC 29577</li>
+                            <li><i class="fas fa-phone"></i>(843) 945-2270</li>
+                            <li><i class="fas fa-clock"></i>Mon–Thu 12 PM – 2 AM · Fri 12 PM – 3 AM · Sat–Sun 12 PM – 2 AM</li>
+                        </ul>
+                        <p>Open since 2008 and known for a relaxed, sports-bar-meets-club atmosphere. The Treasure Club shows UFC fights and major pay-per-view events, and weekday afternoons draw a lunch crowd.</p>
+                        <a href="https://thetreasureclubs.com/myrtle/" class="btn btn-outline-danger" target="_blank" rel="nofollow noopener">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Lust -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card">
+                        <h3>Lust Gentlemen's Club &amp; Steakhouse</h3>
+                        <span class="area-badge">Myrtle Beach</span>
+                        <ul class="listing-meta">
+                            <li><i class="fas fa-map-marker-alt"></i>804 Seaboard St, Myrtle Beach, SC 29577</li>
+                            <li><i class="fas fa-phone"></i>Call ahead for reservations</li>
+                            <li><i class="fas fa-clock"></i>Daily from 11 AM, open late</li>
+                        </ul>
+                        <p>The newest club on the Strand, opened in the former Derriere's building just down the street from the Treasure Club. Lust pairs a full bar with a steakhouse-style kitchen that serves from open to close, making it an easy dinner-and-a-show stop.</p>
+                        <span class="text-muted small"><i class="fas fa-utensils me-1"></i>Full kitchen &amp; bar</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Physical Preparation Section -->
-    <section class="content-section bg-light">
+    <!-- North Myrtle / Atlantic Beach Listings -->
+    <section id="north-myrtle-beach" class="content-section">
         <div class="container">
-            <h2 class="section-title text-center">Physical Preparation & Appearance</h2>
-            
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="step-box">
-                        <div class="step-number">1</div>
-                        <h4>Build and Maintain Your Physique</h4>
-                        <p>Your body is your primary tool as a male entertainer. Most successful performers maintain a lean, muscular physique with visible definition—typically 8-12% body fat. This requires consistent weight training focusing on shoulders, chest, abs, arms, and back, combined with cardiovascular exercise and strict nutrition.</p>
-                        <p>Key physique elements audiences notice:</p>
-                        <ul>
-                            <li>Defined abdominal muscles (six-pack or eight-pack)</li>
-                            <li>Well-developed chest and shoulders</li>
-                            <li>Toned arms with visible biceps and triceps</li>
-                            <li>V-taper from shoulders to waist</li>
-                            <li>Overall symmetry and proportion</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="step-box">
-                        <div class="step-number">2</div>
-                        <h4>Grooming and Presentation</h4>
-                        <p>Professional grooming is non-negotiable. Your appearance should be polished and intentional:</p>
-                        <ul>
-                            <li><strong>Hair:</strong> Clean, styled, and professionally maintained</li>
-                            <li><strong>Facial Hair:</strong> Either clean-shaven or well-groomed beard/stubble</li>
-                            <li><strong>Body Hair:</strong> Chest and abs typically trimmed or waxed for definition</li>
-                            <li><strong>Skin:</strong> Clear complexion, moisturized, possible light tan</li>
-                            <li><strong>Nails:</strong> Clean and trimmed</li>
-                            <li><strong>Teeth:</strong> White and well-maintained</li>
-                            <li><strong>Hygiene:</strong> Fresh shower, deodorant, light cologne</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="step-box">
-                        <div class="step-number">3</div>
-                        <h4>Costume Selection</h4>
-                        <p>Your costume sets the tone and builds anticipation. Popular options include:</p>
-                        <ul>
-                            <li><strong>Classic Choices:</strong> Firefighter, police officer, construction worker, businessman</li>
-                            <li><strong>Fantasy Themes:</strong> Military, cowboy, superhero, gladiator</li>
-                            <li><strong>Custom Requests:</strong> Themes matching the bride's interests or party theme</li>
-                        </ul>
-                        <p>Costume must be:</p>
-                        <ul>
-                            <li>Easy to remove in choreographed, seamless motions</li>
-                            <li>High quality with attention to detail and authentic appearance</li>
-                            <li>Well-fitted to your physique (not too loose or tight)</li>
-                            <li>Clean, pressed, and in excellent condition</li>
-                        </ul>
-                        
-                        <div class="pro-tip">
-                            <strong>Pro Tip:</strong> Use breakaway or velcro closures on costume pieces for dramatic reveals. Practice removing each item smoothly without fumbling.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2 class="section-title text-center">Strip Clubs in North Myrtle Beach &amp; Atlantic Beach</h2>
 
-    <!-- Choreography Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title text-center">Choreography & Performance Techniques</h2>
-            
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 class="h4 mb-4">Creating Your Routine</h3>
-                    
-                    <div class="tip-card">
-                        <h4><i class="fas fa-music me-2"></i>Music Selection</h4>
-                        <p>Choose high-energy songs with strong beats and recognizable hooks. Popular choices include:</p>
-                        <ul>
-                            <li>Hip-hop and R&B tracks with sensual rhythms</li>
-                            <li>Rock songs with driving beats and power</li>
-                            <li>Pop hits that audiences know and love</li>
-                            <li>Classic strip tease songs like "Pony," "Candy Shop," or "Hot in Herre"</li>
+            <div class="row g-4 mt-3">
+                <!-- Thee DollHouse -->
+                <div class="col-lg-6">
+                    <div class="listing-card">
+                        <h3>Thee DollHouse</h3>
+                        <span class="area-badge alt">North Myrtle Beach</span>
+                        <ul class="listing-meta">
+                            <li><i class="fas fa-map-marker-alt"></i>3001 Hwy 17 S, North Myrtle Beach, SC 29582</li>
+                            <li><i class="fas fa-phone"></i>(843) 272-3329</li>
+                            <li><i class="fas fa-clock"></i>Daily, 4 PM – 4 AM · Happy hour 4 PM – 8 PM</li>
                         </ul>
-                        <p>Your routine typically lasts 15-20 minutes with 2-3 song transitions. Build energy progressively throughout the performance.</p>
-                    </div>
-                    
-                    <div class="tip-card">
-                        <h4><i class="fas fa-running me-2"></i>Movement and Dance</h4>
-                        <p>Professional movement separates great performers from amateur ones:</p>
-                        <ul>
-                            <li><strong>Body Rolls:</strong> Smooth, controlled rolling motions through your torso</li>
-                            <li><strong>Hip Movements:</strong> Confident gyrations and thrusts timed to music beats</li>
-                            <li><strong>Arm Positioning:</strong> Flexing and posing to showcase physique</li>
-                            <li><strong>Floor Work:</strong> Push-ups, sits-ups, or ground movements that display athleticism</li>
-                            <li><strong>Spins and Turns:</strong> Controlled rotations that show all angles</li>
-                        </ul>
-                        
-                        <div class="pro-tip">
-                            <strong>Pro Tip:</strong> Take dance classes or watch professional performances to learn rhythm, timing, and fluidity. Practice in front of mirrors to perfect your movements.
-                        </div>
-                    </div>
-                    
-                    <div class="tip-card">
-                        <h4><i class="fas fa-layer-group me-2"></i>The Clothing Removal Sequence</h4>
-                        <p>Build anticipation with strategic reveals:</p>
-                        
-                        <div class="timeline-item">
-                            <h5>Opening (Minutes 0-3)</h5>
-                            <p>Enter in full costume, establish presence, interact with audience, build energy. Remove outer layer (jacket, shirt) while dancing and engaging with the group.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h5>Building Tension (Minutes 3-8)</h5>
-                            <p>Focus on the bride-to-be, incorporate chair work or lap dance elements, remove next layer (pants, vest, accessories). Tease the audience with near-reveals and playful interactions.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h5>Peak Energy (Minutes 8-15)</h5>
-                            <p>Maximum audience engagement, down to minimal attire (often athletic shorts, tear-away pants, or themed underwear), showcase physique with poses and flexing, incorporate props if using them.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h5>Finale (Minutes 15-20)</h5>
-                            <p>Climactic moments focused on bride, final reveals or costume pieces, group photos if requested, graceful exit with energy and professionalism.</p>
-                        </div>
+                        <p>A Grand Strand institution for nearly four decades and the most upscale-feeling room on the north end. Expect VIP packages, premium liquor and bottle service, and the latest closing time on the coast, which makes it the natural last stop of the night.</p>
+                        <a href="https://theedollhousesc.com/" class="btn btn-outline-danger" target="_blank" rel="nofollow noopener">Visit Website</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Audience Engagement Section -->
-    <section class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">Audience Engagement & Interaction</h2>
-            
-            <div class="row mt-5">
-                <div class="col-md-6 mb-4">
-                    <div class="icon-feature">
-                        <i class="fas fa-eye"></i>
-                        <h4>Reading the Room</h4>
-                        <p>Assess the audience energy level immediately upon arrival. Adjust your intensity, interaction style, and approach based on whether the group is shy and reserved or wild and energetic. Stay flexible and responsive.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 mb-4">
-                    <div class="icon-feature">
-                        <i class="fas fa-comments"></i>
-                        <h4>Eye Contact & Connection</h4>
-                        <p>Make eye contact with multiple audience members, especially the bride. Smile genuinely, show confidence, and create moments that make individuals feel special and included in the experience.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 mb-4">
-                    <div class="icon-feature">
-                        <i class="fas fa-crown"></i>
-                        <h4>Featuring the Bride</h4>
-                        <p>The bride-to-be is the star. Give her special attention with dedicated dance time, a chair performance, playful interactions, and moments that create lasting memories while respecting her comfort level.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 mb-4">
-                    <div class="icon-feature">
-                        <i class="fas fa-users"></i>
-                        <h4>Group Involvement</h4>
-                        <p>Engage the entire party, not just the bride. Include bridesmaids and guests in appropriate ways—dancing near them, playful interactions, and creating a fun atmosphere for everyone present.</p>
+                <!-- Pearls Cabaret -->
+                <div class="col-lg-6">
+                    <div class="listing-card">
+                        <h3>Pearls Cabaret / Platinum Drip</h3>
+                        <span class="area-badge alt">Atlantic Beach</span>
+                        <ul class="listing-meta">
+                            <li><i class="fas fa-map-marker-alt"></i>3106 Hwy 17 S, North Myrtle Beach (Atlantic Beach), SC 29582</li>
+                            <li><i class="fas fa-phone"></i>(843) 273-0251</li>
+                            <li><i class="fas fa-clock"></i>Late-night events, typically Fri &amp; Sun from 9 PM</li>
+                        </ul>
+                        <p>An urban-style club just up Highway 17 from Thee DollHouse, running its "Platinum Drip" party nights with DJs and a nightclub feel. It's more of an event-night venue than an every-night club, so check the schedule before you go.</p>
+                        <a href="https://clubdripinsideofpearls.com/" class="btn btn-outline-danger" target="_blank" rel="nofollow noopener">Visit Website</a>
                     </div>
                 </div>
             </div>
-            
-            <div class="row mt-4">
+
+            <div class="row mt-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="warning-box">
-                        <h4><i class="fas fa-exclamation-triangle me-2"></i>Boundaries and Consent</h4>
-                        <p><strong>Professional performers always maintain clear boundaries:</strong></p>
-                        <ul>
-                            <li>Never touch guests inappropriately or without clear consent signals</li>
-                            <li>Allow touching from audience only in acceptable areas (shoulders, arms, abs)</li>
-                            <li>Read body language—if someone seems uncomfortable, redirect attention elsewhere</li>
-                            <li>Maintain respect even in high-energy, party atmospheres</li>
-                            <li>Decline requests that cross professional boundaries</li>
-                            <li>Remember: creating fun doesn't require making anyone uncomfortable</li>
-                        </ul>
+                        <h4><i class="fas fa-info-circle me-2"></i>Clubs You May Still See Online</h4>
+                        <p class="mb-0">Older listings still show a few names that are no longer operating on the Grand Strand. <strong>Derriere's</strong> on Seaboard Street is now Lust, and <strong>Tiffany's Cabaret</strong> and the <strong>Gold Club</strong> were shut down years ago. <strong>Strip Club Palace</strong> shows up in search results but is a limo and transportation service rather than a club. Hours and events change often, so always call ahead.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Professionalism Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title text-center">Professionalism & Business Practices</h2>
-            
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="checklist-box">
-                        <h4 class="mb-4"><i class="fas fa-briefcase me-2"></i>Professional Standards Checklist</h4>
-                        <ul>
-                            <li><strong>Punctuality:</strong> Arrive 15-30 minutes early to assess venue and prepare</li>
-                            <li><strong>Communication:</strong> Confirm booking details, address, timing, and special requests in advance</li>
-                            <li><strong>Sobriety:</strong> Never perform under the influence of alcohol or drugs</li>
-                            <li><strong>Reliability:</strong> Honor commitments and show up for every booked performance</li>
-                            <li><strong>Equipment:</strong> Bring your own music, speaker if needed, backup costumes</li>
-                            <li><strong>Discretion:</strong> Respect client privacy—no photos/videos without permission</li>
-                            <li><strong>Payment:</strong> Collect payment before performance (typically $200+ for quality shows)</li>
-                            <li><strong>Contracts:</strong> Use written agreements outlining services, fees, and expectations</li>
-                            <li><strong>Insurance:</strong> Carry liability insurance for professional protection</li>
-                            <li><strong>Legality:</strong> Ensure your performances comply with local laws and regulations</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tip-card mt-4">
-                        <h4><i class="fas fa-shield-alt me-2"></i>Safety Considerations</h4>
-                        <p>Professional performers prioritize safety for themselves and clients:</p>
-                        <ul>
-                            <li>Screen bookings carefully—verify legitimate clients and safe venues</li>
-                            <li>Share your location and schedule with a trusted contact</li>
-                            <li>Assess venue for hazards (slippery floors, low ceilings, sharp furniture)</li>
-                            <li>Have an exit strategy if situations become uncomfortable or unsafe</li>
-                            <li>Trust your instincts—decline bookings that feel wrong</li>
-                            <li>Consider working with established entertainment companies for added security</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Practice & Preparation Section -->
-    <section class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">Practice & Continuous Improvement</h2>
-            
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 class="h4 mb-4">How to Practice Your Routine</h3>
-                    
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="step-box">
-                                <div class="step-number">1</div>
-                                <h4>Mirror Practice</h4>
-                                <p>Practice your entire routine in front of full-length mirrors to:</p>
-                                <ul>
-                                    <li>Perfect your movements and transitions</li>
-                                    <li>Ensure costume removal is smooth</li>
-                                    <li>Check your angles and poses</li>
-                                    <li>Develop muscle memory for choreography</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="step-box">
-                                <div class="step-number">2</div>
-                                <h4>Video Recording</h4>
-                                <p>Record practice sessions to identify:</p>
-                                <ul>
-                                    <li>Awkward movements or timing issues</li>
-                                    <li>Areas where energy drops</li>
-                                    <li>Facial expressions and stage presence</li>
-                                    <li>Overall flow and pacing</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="step-box">
-                                <div class="step-number">3</div>
-                                <h4>Feedback from Peers</h4>
-                                <p>Get honest critiques from other performers:</p>
-                                <ul>
-                                    <li>Join performance groups or classes</li>
-                                    <li>Attend industry workshops</li>
-                                    <li>Share best practices with colleagues</li>
-                                    <li>Learn from experienced entertainers</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="step-box">
-                                <div class="step-number">4</div>
-                                <h4>Fitness Training</h4>
-                                <p>Maintain peak physical condition:</p>
-                                <ul>
-                                    <li>Weight training 5-6 days per week</li>
-                                    <li>Cardiovascular conditioning</li>
-                                    <li>Flexibility and stretching work</li>
-                                    <li>Proper nutrition and hydration</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="highlight-box mt-5">
-                        <h3><i class="fas fa-graduation-cap me-2"></i>Building Your Skills</h3>
-                        <p>The best performers continuously improve through:</p>
-                        <ul class="mb-0">
-                            <li><strong>Dance Classes:</strong> Hip-hop, contemporary, or exotic dance training</li>
-                            <li><strong>Performance Workshops:</strong> Learn from industry professionals</li>
-                            <li><strong>Studying Professionals:</strong> Watch and learn from successful performers</li>
-                            <li><strong>Trying New Moves:</strong> Expand your repertoire with fresh choreography</li>
-                            <li><strong>Costume Updates:</strong> Refresh your wardrobe with new themes and styles</li>
-                            <li><strong>Music Research:</strong> Stay current with popular songs and trends</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Common Mistakes Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title text-center">Common Mistakes to Avoid</h2>
-            
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Poor Physical Condition</h4>
-                                <p>Arriving out of shape or not maintaining your physique. Audiences expect fit, defined bodies. Don't book performances until you've achieved the required conditioning.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Unpracticed Choreography</h4>
-                                <p>Fumbling with costume pieces, awkward movements, or losing rhythm. Practice until every move is second nature and costume removal is seamless.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Ignoring the Bride</h4>
-                                <p>Failing to give adequate attention to the bride-to-be. She should be the focal point of your performance with special moments created just for her.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Crossing Boundaries</h4>
-                                <p>Being too aggressive, making guests uncomfortable, or crossing professional lines. Always maintain respect and read social cues carefully.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Low Energy Performance</h4>
-                                <p>Appearing bored, tired, or going through the motions. Every performance should feel fresh, energetic, and exciting regardless of how many shows you've done.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div class="tip-card" style="border-left-color: #dc3545;">
-                                <h4 style="color: #dc3545;"><i class="fas fa-times-circle me-2"></i>Poor Hygiene or Grooming</h4>
-                                <p>Showing up with body odor, unkempt appearance, or sloppy grooming. Professional presentation is mandatory—no exceptions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Charleston Services CTA -->
-    <section class="content-section bg-light">
+    <!-- Male Strippers -->
+    <section id="male-strippers" class="content-section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="highlight-box">
-                        <h3><i class="fas fa-star me-2"></i>Professional Bachelorette Party Entertainment in Charleston</h3>
-                        <p class="lead">For bachelorette parties in the Charleston, South Carolina area seeking professional male entertainment, <a href="https://michaelafterdark.com">Michael After Dark Charleston</a></strong> provides quality performances that follow all the best practices outlined in this guide.</p>
-                        <p>Our experienced entertainers deliver choreographed shows for bachelorette parties throughout Charleston, Mount Pleasant, Isle of Palms, Sullivan's Island, Folly Beach, and surrounding areas. We bring professional equipment, polished routines, and years of experience creating memorable celebrations.</p>
-                        <p class="mb-4"><strong>Pricing:</strong> Professional shows start at $200 for quality entertainment that exceeds expectations. We service hotels, vacation rentals, private homes, and event venues throughout the greater Charleston area.</p>
+                        <h2 class="h3"><i class="fas fa-star me-2"></i>Male Strippers on the Grand Strand</h2>
+                        <p class="lead">There's no full-time male club on the Grand Strand, so bachelorette groups who want male entertainment book a private show at their rental, hotel suite, or party venue instead.</p>
+                        <p>Our top recommendation is <a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a>, a solo male entertainer who brings a polished, interactive show to private parties from Pawleys Island, Murrells Inlet, and Surfside Beach up through South Myrtle Beach and Myrtle Beach. It's built for groups who want the bride-to-be in on the fun, not a crowd that just wants to sit back and watch.</p>
+                        <a href="https://grandstrandgent.com" class="btn btn-light btn-lg mt-2" target="_blank" rel="noopener">Book Grand Strand Gent</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-house-chimney"></i>
+                        <h4>Comes to You</h4>
+                        <p class="mb-0">Beach houses, condos, hotel suites, and private venues anywhere along the Strand. No lines, no cover, no rideshare home.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-crown"></i>
+                        <h4>Bride-Focused</h4>
+                        <p class="mb-0">The show centers on the bride-to-be while keeping the whole group involved and comfortable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-shield-halved"></i>
+                        <h4>Professional</h4>
+                        <p class="mb-0">On time, discreet, and respectful of boundaries. Booking details are confirmed with the planner in advance.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final Tips Section -->
-    <section class="content-section">
+    <!-- Quick Compare -->
+    <section id="quick-compare" class="content-section">
         <div class="container">
+            <h2 class="section-title text-center">Quick Compare</h2>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="section-title text-center">Final Professional Tips</h2>
-                    
-                    <div class="checklist-box mt-5">
-                        <h4 class="mb-4">Performance Day Checklist</h4>
-                        <ul>
-                            <li>Confirm booking details and address 24 hours before performance</li>
-                            <li>Eat a light meal 2-3 hours before to avoid discomfort</li>
-                            <li>Hydrate well throughout the day</li>
-                            <li>Complete grooming routine (shower, shave/trim, styling)</li>
-                            <li>Pack all costume pieces, backup outfits, and props</li>
-                            <li>Bring portable speaker and music playlist with backups</li>
-                            <li>Arrive early to assess venue and prepare mentally</li>
-                            <li>Do light stretching and warm-up movements before performance</li>
-                            <li>Put phone on silent/vibrate during show</li>
-                            <li>Bring business cards for future bookings</li>
-                        </ul>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-directory align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Venue</th>
+                                    <th>Area</th>
+                                    <th>Typical Close</th>
+                                    <th>Best For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Masters Gentleman's Club</strong></td>
+                                    <td>Myrtle Beach</td>
+                                    <td>2 AM</td>
+                                    <td>Biggest roster, VIP rooms, shuttle</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>The Treasure Club</strong></td>
+                                    <td>Myrtle Beach</td>
+                                    <td>2–3 AM</td>
+                                    <td>Fight nights, laid-back vibe</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lust</strong></td>
+                                    <td>Myrtle Beach</td>
+                                    <td>Late</td>
+                                    <td>Dinner plus a show</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Thee DollHouse</strong></td>
+                                    <td>North Myrtle Beach</td>
+                                    <td>4 AM</td>
+                                    <td>Upscale VIP, last stop of the night</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pearls Cabaret / Platinum Drip</strong></td>
+                                    <td>Atlantic Beach</td>
+                                    <td>Late (event nights)</td>
+                                    <td>DJ party nights</td>
+                                </tr>
+                                <tr>
+                                    <td><strong><a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a></strong></td>
+                                    <td>Pawleys Island to Myrtle Beach</td>
+                                    <td>By booking</td>
+                                    <td>Private bachelorette parties</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    
-                    <div class="pro-tip mt-4">
-                        <strong>Final Pro Tip:</strong> Every bachelorette party is different. Stay adaptable, read the room constantly, and adjust your performance based on audience energy and comfort levels. The goal is creating fun, memorable experiences—not following a rigid script. Your ability to connect authentically while maintaining professionalism separates great performers from mediocre ones.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Tips -->
+    <section id="tips" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Tips for a Night Out on the Strand</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="checklist-box">
+                        <ul>
+                            <li><strong>Bring ID:</strong> Every club checks, and most with a full bar are 21+.</li>
+                            <li><strong>Carry cash:</strong> Dances and tips run on cash. ATMs are available but fees add up.</li>
+                            <li><strong>Call ahead:</strong> Hours shift with the season, bike weeks, and golf season. Confirm before you drive over.</li>
+                            <li><strong>Plan your ride:</strong> The Myrtle Beach clubs and the Highway 17 clubs are about 15–20 minutes apart. Use a rideshare or ask about club shuttles.</li>
+                            <li><strong>Ask about groups:</strong> Some clubs have policies for large parties or all-female groups, so let them know your headcount in advance.</li>
+                            <li><strong>Respect the rules:</strong> Follow each club's no-touch and no-photo policies. Staff enforce them.</li>
+                            <li><strong>Bachelorette party?</strong> For a private show where the bride is the star, book <a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a> for your rental instead.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -687,17 +488,31 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h5>Male Striptease Performance Guide</h5>
-                    <p>Professional techniques and best practices for delivering exceptional male entertainment at bachelorette parties.</p>
+                <div class="col-md-6 mb-3">
+                    <h5>Grand Strand Club Guide</h5>
+                    <p class="mb-0">An independent directory of strip clubs and adult nightlife across Myrtle Beach, North Myrtle Beach, and Atlantic Beach, SC.</p>
                 </div>
-                
+                <div class="col-md-3 mb-3">
+                    <h6>Pages</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Directory</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Male Entertainment</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 Professional Male Entertainment Guide. Creating unforgettable bachelorette party experiences.</p>
+                    <p class="mb-0 small">&copy; 2026 Grand Strand Club Guide. Independent listings; not affiliated with any club. Adults 18+ / 21+ only.</p>
                 </div>
             </div>
         </div>

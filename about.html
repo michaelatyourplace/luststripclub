@@ -3,147 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional male entertainment services for bachelorette parties in Charleston, SC. Quality performances, experienced entertainers, unforgettable celebrations.">
-    <title>About Us | Professional Male Entertainment Charleston</title>
-    
+    <title>About | Grand Strand Club Guide</title>
+    <meta name="description" content="About the Grand Strand Club Guide, an independent directory of adult nightlife in Myrtle Beach, North Myrtle Beach, and Atlantic Beach, SC.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --primary-color: #c41e3a;
             --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
             color: #333;
         }
-        
-        .hero-section {
-            background: linear-gradient(rgba(196, 30, 58, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600') center/cover;
+
+        .navbar-brand { font-weight: 700; letter-spacing: .5px; }
+        .navbar-brand span { color: var(--accent-color); }
+
+        .page-header {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.95), rgba(44, 62, 80, 0.95));
             color: white;
-            padding: 100px 0 60px;
+            padding: 90px 0 60px;
         }
-        
-        .hero-section h1 {
-            font-size: 3rem;
+
+        .page-header h1 { font-weight: 700; font-size: 2.8rem; }
+
+        .content-section { padding: 70px 0; }
+
+        .section-title {
+            color: var(--primary-color);
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--accent-color);
         }
-        
-        .content-section {
-            padding: 80px 0;
-        }
-        
-        .icon-box {
+
+        .icon-feature {
             text-align: center;
-            padding: 30px 20px;
-        }
-        
-        .icon-box i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, var(--primary-color), #e74c3c);
-            color: white;
-            padding: 50px;
+            padding: 30px;
+            background: white;
             border-radius: 10px;
-            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            height: 100%;
         }
-        
-        .btn-custom {
-            background-color: white;
+
+        .icon-feature i {
+            font-size: 2.6rem;
             color: var(--primary-color);
-            padding: 12px 35px;
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
+            margin-bottom: 18px;
         }
-        
-        .btn-custom:hover {
-            background-color: var(--secondary-color);
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .highlight-box h3 { color: white; }
+        .highlight-box a:not(.btn) { color: #fff; text-decoration: underline; }
+        .highlight-box a.btn-light { color: var(--primary-color); font-weight: 700; }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .warning-box h4 { color: #856404; margin-bottom: 12px; }
+
+        footer a { color: #ddd; text-decoration: none; }
+        footer a:hover { color: #fff; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2.1rem; }
+            .highlight-box { padding: 28px 22px; }
         }
     </style>
 </head>
 <body>
 
-    <section class="hero-section">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1>About Michael Charleston</h1>
-                    <p class="lead">Professional Male Entertainment for Unforgettable Bachelorette Parties</p>
-                </div>
+            <a class="navbar-brand" href="index.html">Grand Strand <span>Club Guide</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Directory</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
+    <!-- Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>About the Guide</h1>
+            <p class="lead mb-0">An independent, no-nonsense look at adult nightlife on the Grand Strand.</p>
+        </div>
+    </header>
+
+    <!-- About Content -->
     <section class="content-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row mb-5">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-center mb-4" style="color: var(--primary-color);">Who We Are</h2>
-                            
-                            <p>Michael Charleston provides professional male entertainment services for bachelorette parties throughout the Charleston, South Carolina area. We specialize in delivering high-quality, choreographed performances that create memorable experiences for brides-to-be and their celebration parties.</p>
-                            
-                            <p>Our experienced entertainers bring polished routines, professional presentation, and years of performance expertise to every booking. Whether you're celebrating at a downtown Charleston hotel, a beach house on Isle of Palms, or a vacation rental in Mount Pleasant, we deliver the same exceptional level of entertainment that has made us a trusted choice for bachelorette parties across the Lowcountry.</p>
-                            
-                            <p>We understand that every bachelorette party is unique. Our performers are skilled at reading the room, adapting to different energy levels, and ensuring everyone feels comfortable while creating an exciting, fun atmosphere. From the moment we arrive until the final curtain call, our focus remains on making the bride-to-be feel celebrated and giving the entire party an experience they'll remember.</p>
-                            
-                            <p>Professionalism sets us apart. We arrive on time, come prepared with our own equipment and music, maintain excellent grooming and physical conditioning, and conduct ourselves with respect and discretion. Our transparent pricing starts at $200 for quality shows, and we honor every commitment we make to our clients.</p>
-                        </div>
+                <div class="col-lg-9 mx-auto">
+                    <h2 class="section-title">Who We Are</h2>
+                    <p>Grand Strand Club Guide is an independent directory of strip clubs and adult entertainment along the South Carolina coast. We cover the venues visitors actually ask about, from the clubs off Seaboard Street and Mr. Joe White Avenue in Myrtle Beach to the Highway 17 strip in Atlantic Beach and North Myrtle Beach.</p>
+                    <p>Search results for this area are full of outdated listings, closed clubs, and businesses that aren't clubs at all. Our goal is simple: keep one clean, current list so golf groups, bachelor and bachelorette parties, and anyone visiting the beach can plan a night out without guesswork.</p>
+
+                    <h2 class="section-title mt-5">How We Build Our Listings</h2>
+                    <p>Every club in the directory is checked for a working address, phone number, and current hours. When a venue closes, changes names, or moves, we update or remove it and note the change so readers aren't sent to an empty building. Listings are free, and no club pays for placement or a better write-up.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-map-location-dot"></i>
+                        <h4>Local Coverage</h4>
+                        <p class="mb-0">Myrtle Beach, North Myrtle Beach, Atlantic Beach, and the South Strand down to Pawleys Island.</p>
                     </div>
-                    
-                    <div class="row mt-5">
-                        <div class="col-md-4 mb-4">
-                            <div class="icon-box">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>Professional</h4>
-                                <p>Licensed, reliable entertainers who respect boundaries and prioritize client satisfaction</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="icon-box">
-                                <i class="fas fa-dumbbell"></i>
-                                <h4>Experienced</h4>
-                                <p>Fit, well-groomed performers with practiced choreography and stage presence</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="icon-box">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <h4>Local Experts</h4>
-                                <p>Serving Charleston, Mount Pleasant, Isle of Palms, Sullivan's Island, Folly Beach</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-rotate"></i>
+                        <h4>Kept Current</h4>
+                        <p class="mb-0">Closed and renamed clubs are flagged so you know exactly what's open this season.</p>
                     </div>
-                    
-                    
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-feature">
+                        <i class="fas fa-scale-balanced"></i>
+                        <h4>Independent</h4>
+                        <p class="mb-0">We're not owned by or affiliated with any club listed in the directory.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
+    <!-- Male Entertainment -->
+    <section class="content-section bg-light">
         <div class="container">
             <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-star me-2"></i>Why We Recommend Grand Strand Gent</h3>
+                        <p>The Grand Strand doesn't have a full-time male club, and the most common question we get from bachelorette planners is who to book instead. Our answer is <a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a>. He's a professional solo male entertainer who performs private, interactive shows at rentals, hotel suites, and party venues from Pawleys Island to Myrtle Beach, and he's reliable, discreet, and focused on making the bride's night.</p>
+                        <a href="https://grandstrandgent.com" class="btn btn-light mt-2" target="_blank" rel="noopener">Visit Grand Strand Gent</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-9 mx-auto">
+                    <div class="warning-box">
+                        <h4><i class="fas fa-circle-exclamation me-2"></i>Disclaimer</h4>
+                        <p class="mb-0">This site is for adults only. Information is provided for general reference, and hours, policies, and entry requirements can change without notice. Please confirm details directly with each venue before visiting, drink responsibly, and always plan a safe ride home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Grand Strand Club Guide</h5>
+                    <p class="mb-0">An independent directory of strip clubs and adult nightlife across Myrtle Beach, North Myrtle Beach, and Atlantic Beach, SC.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Pages</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Directory</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6>Male Entertainment</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://grandstrandgent.com" target="_blank" rel="noopener">Grand Strand Gent</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 Michael Charleston. Professional bachelorette party entertainment.</p>
+                    <p class="mb-0 small">&copy; 2026 Grand Strand Club Guide. Independent listings; not affiliated with any club. Adults 18+ / 21+ only.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
